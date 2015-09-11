@@ -1,0 +1,102 @@
+{
+    "title": "奇舞周刊第1期", 
+    "pageData": [
+        {
+            "article": [ ], 
+            "title": "Javascript"
+        }, 
+        {
+            "article": [
+                {
+                    "title": "Asm.js:TheJavaScriptCompileTarget", 
+                    "desc": "<a href=\"http://asmjs.org/\">ASM.js</a>是JavaScript的一个严格子集，可以用来作为一个底层的、高效编译器目标语言。它使用<a href=\"http://emscripten.org/\">Emscripten</a>将C/C++代码生成的<a href=\"http://llvm.org/\">LLVM</a>字节码转化为JavaScript代码。在Firefox的一个开发版中，已经<a href=\"https://blog.mozilla.org/luke/2013/03/21/asm-js-in-firefox-nightly/\">内置了对ASM.js的优化</a>。根据官方的基准测试数据，Firefox+ASM.js的运行速度仅次于C/C++编写的本地程序。ASM.js本身也是JavaScript，为什么它能运行的比手写的JavaScript快呢？<a href=\"http://kripken.github.io/mloc_emscripten_talk\">秘密在这里</a>。", 
+                    "url": "http://ejohn.org/blog/asmjs-javascript-compile-target/"
+                }
+            ]
+        }, 
+        {
+            "article": [
+                {
+                    "title": "LearningJavaScriptDesignPatterns", 
+                    "desc": "由Google工程师Addy Osmani编写的一本的JavaScript设计模式的教程，里面完整介绍了近30种常见的设计模式。该书的纸质版已经由OReilly出版，但是在线版本是免费的，绝对不容错过。", 
+                    "url": "http://addyosmani.com/resources/essentialjsdesignpatterns/book/"
+                }
+            ]
+        }, 
+        {
+            "article": [
+                {
+                    "title": "FunctionsExplained", 
+                    "desc": "深入理解JavaScript中的函数", 
+                    "url": "http://markdaggett.com/blog/2013/02/15/functions-explained/"
+                }
+            ]
+        }, 
+        {
+            "article": [
+                {
+                    "title": "AJavaScriptrefresh", 
+                    "desc": "JavaScript语言特性的全面介绍，入门级。", 
+                    "url": "http://typedarray.org/javascript-refresh/"
+                }
+            ]
+        }, 
+        {
+            "article": [ ], 
+            "title": "CSS"
+        }, 
+        {
+            "article": [
+                {
+                    "title": "AboutHTMLsemanticsandfront-endarchitecture", 
+                    "desc": "作者关于HTML语义化、class命名、前端组件的复用和组合等诸多方面的一些思考，值得我们关注。", 
+                    "url": "http://nicolasgallagher.com/about-html-semantics-front-end-architecture/"
+                }
+            ]
+        }, 
+        {
+            "article": [
+                {
+                    "title": "好吧，CSS33Dtransform变换，不过如此！", 
+                    "desc": "很形象！", 
+                    "url": "http://www.zhangxinxu.com/wordpress/2012/09/css3-3d-transform-perspective-animate-transition/"
+                }
+            ]
+        }, 
+        {
+            "article": [ ], 
+            "title": "用户体验"
+        }, 
+        {
+            "article": [
+                {
+                    "title": "URLsareforPeople,notComputers", 
+                    "desc": "微软的一项研究显示，人们会花24%的时间来查看搜索结果的URL。URL从某种意义上讲也是UI，简洁、语义化、层次清晰的URL会提高点击率。", 
+                    "url": "http://www.not-implemented.com/urls-are-for-people-not-computers/"
+                }
+            ]
+        }, 
+        {
+            "article": [
+                {
+                    "title": "TransitionalInterfaces", 
+                    "desc": "更自然的用户界面切换动画", 
+                    "url": "https://medium.com/design-ux/926eb80d64e3"
+                }
+            ]
+        }, 
+        {
+            "article": [ ], 
+            "title": "其它"
+        }, 
+        {
+            "article": [
+                {
+                    "title": "浏览器市场再起波澜，多家厂商将换新内核", 
+                    "desc": "就在<a href=\"http://my.opera.com/ODIN/blog/300-million-users-and-move-to-webkit\">Opera放弃自己的浏览器引擎Presto</a>拥抱WebKit后不久，Mozilla宣布和三星合作开发<a href=\"https://github.com/mozilla/servo\">下一代浏览器引擎Servo</a>。几个小时后，Google也宣布基于Webkit来开发自己的<a href=\"http://www.chromium.org/blink\">新引擎Blink</a>。我们最关心的问题是，新的引擎对前端工程师制作网站有什么影响？从目前获取到的消息来看，答案是没有影响。因为这两家公司都称不会再引入新的浏览器前缀，而之前页面中的-webkit-和-moz-将在新的引擎中继续支持。 关于Blink的更多问题，可以查看官方的<a href=\"http://www.chromium.org/blink/developer-faq\">开发者FAQ页面</a>。", 
+                    "url": "http://www.infoq.com/cn/news/2013/04/Google-Blink-Mozilla-Servo"
+                }
+            ]
+        }
+    ]
+}
