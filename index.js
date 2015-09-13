@@ -25,9 +25,9 @@ var reqUrl = 'http://www.75team.com/weekly/issue';
 			"Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
 			"Accept-Language": "zh-cn,zh;q=0.5",
 			"Accept-Encoding": "utf-8;q=0.7,*;q=0.7",
-			"Referer": "http://www.baidu.com/",
+			"Referer": "http://www.75team.com/weekly/",
 			"Cache-Control": "max-age=0",
-			'Cookie': '_gat=1; _ga=GA1.2.1291159534.1441994155',
+			'Cookie': '__utmt=1; __utma=59198187.1291159534.1441994155.1442150448.1442150448.1; __utmb=59198187.1.10.1442150448; __utmc=59198187; __utmz=59198187.1442150448.1.1.utmcsr=(direct)|utmccn=(direct)|utmcmd=(none); _ga=GA1.2.1291159534.1441994155; _gat=1',
 			'Connection': 'keep-alive',
 			'RA-Sid': '72DD9350-20150606-071542-d81a15-564661',
 			'RA-Ver': '3.0.7',
@@ -47,18 +47,18 @@ var reqUrl = 'http://www.75team.com/weekly/issue';
 		console.log('调用请求后：' + index);
 		$ = cheerio.load(body, {decodeEntities: false});
 		singlePageData = parseStructor($);
-		/*
-		fs.appendFileSync('./data.json', JSON.stringify(singlePageData), {encoding:'utf8'}, function(err){
-			if(err){
-				console.log('appendFile: ' + err);
-			}
-		});
-		*/
+		weekly[index] = singlePageData
+		
 		singlePageData = null;
 
 		//console.log('done: ' + reqUrl + index + '.html');
 		setTimeout(function(){
 			if(++index > weeklyNum){
+				fs.appendFileSync('./data.json', JSON.stringify(weekly), {encoding:'utf8'}, function(err){
+					if(err){
+						console.log('appendFile: ' + err);
+					}
+				});
 				return;
 			}else{
 				callee(index);
